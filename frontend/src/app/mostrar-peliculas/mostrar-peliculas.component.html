@@ -1,0 +1,13 @@
+<div class="btn-group">
+    <button [routerLink]="['/most-watched-movies']" class="btn btn-primary">This Week’s Most Watched Movies</button>
+    <button [routerLink]="['/movies-in-theatres']" class="btn btn-primary">Movies in Theatres</button>
+    <button [routerLink]="['/most-popular-movies']"  class="btn btn-primary">Most popular movies</button>
+</div>
+
+<div [infiniteScrollDisabled] = "deshabilitarScroll" infinite-scroll (scrolled)="onScrollDown($event)">
+    <div class="grilla">       
+        <img (click)="compartirVista()" *ngFor="let pelicula of listaPeliculas" [routerLink]="['/pelicula-elegida', pelicula.id]" 
+            [src]="construirImagePath(pelicula.poster_path)">
+    </div>   
+
+</div>

@@ -1,0 +1,32 @@
+img {
+    cursor: pointer;
+}
+
+.btn-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 20px;
+}
+
+.btn {
+    background-color: black;
+}
+
+.grilla {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 70rem;
+    width: 100%;
+    
+}
+
+.grilla img {
+    border: 3px solid blue;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+}

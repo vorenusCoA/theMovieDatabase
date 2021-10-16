@@ -1,0 +1,32 @@
+img {
+    width: 350px;
+}
+
+.grilla {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+    padding-top: 30px;
+    
+}
+
+div {
+    max-width: 70rem;
+    width: 100%;
+}
+
+  h1 {
+      color:white;
+      font-weight: 500;
+  }
+
+  h2 {
+      font-size: 15px;
+      color: grey
+  }
+
+  p {
+      font-size: 20px ;
+      color: white;
+  }
