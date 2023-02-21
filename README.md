@@ -4,7 +4,7 @@ Es una aplicacion creada a partir de Angular para el Frontend, Node.js y Express
 
 Permite ver las películas del momento, ordenadas por "Las más vistas de la semana", "Películas en cine" y "Las más populares".  
 
-Pueden verla funcionando en el siguiente link: https://themoviedatabase01.herokuapp.com/
+Pueden verla funcionando en el siguiente link: PENDIENTE
 
 ## Instrucciones para correrlo localmente
 
