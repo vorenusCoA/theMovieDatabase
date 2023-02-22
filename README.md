@@ -36,8 +36,8 @@ En este link se obtiene de forma gratuita la API key: https://www.themoviedb.org
 
 ## Levantar app
 
-Levantar el servidor del backend: *npm run dev*
+Hacer un build del cliente (dentro de /frontend): `ng build`
 
-Levantar el servidor de Angular CLI: *npm start*
+Levantar el servidor (dentro de /servidor): `node index.js`
 
-App disponible en: localhost: 4200
+App disponible en: localhost:3000
