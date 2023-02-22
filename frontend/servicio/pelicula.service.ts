@@ -8,7 +8,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class PeliculaService {
 
-  url = "http://localhost:3000/api/peliculas/" 
+  url = "/api/peliculas/" 
 
   private vista_actual = new BehaviorSubject("");
   sharedView = this.vista_actual.asObservable();
