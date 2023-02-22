@@ -34,8 +34,9 @@ export class MostrarPeliculasComponent implements OnInit {
       .body.style.backgroundColor = 'black';
   }
 
-  ngOnInit(): void {   
-    this.obtenerBaseUrl()
+  async ngOnInit(): Promise<void> {   
+    await this.obtenerBaseUrl();
+
     if(this.vista_actual === "most-watched-movies" ) {
       this.getMostWatchedMovies()   
     } else if( this.vista_actual === "movies-in-theatres") {
@@ -84,7 +85,7 @@ export class MostrarPeliculasComponent implements OnInit {
     })
   }
 
-  obtenerBaseUrl() {
+  async obtenerBaseUrl() {
     this.peliculaService.getBaseUrl().subscribe(data => {
       console.log(data)
       this.base_url = data.base_url
