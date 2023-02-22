@@ -1,6 +1,6 @@
 const { response } = require('express');
 const fetch = require('node-fetch');
-const apiKey = "Ingresar API Key proporcionada por TMDB"
+const apiKey = process.env.API_KEY;
 
 exports.getMostWatchedMovies =  async (req,res) => { 
   await fetch("https://api.themoviedb.org/3/trending/movie/week?api_key=" + apiKey)
